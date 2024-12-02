@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Akira Expanded';
+  src: url(./assets/fonts/AkiraExpanded.otf) format('otf');
+}

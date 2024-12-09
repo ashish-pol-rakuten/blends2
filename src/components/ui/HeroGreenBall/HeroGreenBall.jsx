@@ -5,7 +5,7 @@ export const HeroGreenBall = () => {
   useEffect(() => {
     const ball = document.getElementById("ball");
     ball.animate(
-      { offsetDistance: ["0%", "100%"] },
+      { offsetDistance: ["100%", "0%"] },
       {
         duration: 25000,
         iterations: Infinity,

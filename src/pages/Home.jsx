@@ -1,14 +1,16 @@
 import React from "react";
-import { HeroGreenBall } from "../components/ui/HeroGreenBall/HeroGreenBall";
+import { Hero } from "../components/sections/Hero";
+import { AboutUs } from "../components/sections/AboutUs";
+import { Mission } from "../components/sections/Mission";
+import { Projects } from "../components/sections/Projects";
 
 export const Home = () => {
   return (
     <div>
-      <div className="py-[5rem] relative">
-        <div className="w-[172rem] h-[36.1rem] rounded-[50%] border-brand border-solid border-[17px] -translate-x-[50%] shadow-[0_0_80px_0_rgba(7,101,56,1)] relative z-1"></div>
-        <HeroGreenBall />
-        <div className="backdrop-blur-[20px] absolute top-0 left-0 w-[100%] h-[100%] z-2"></div>
-      </div>
+      <Hero />
+      <AboutUs />
+      <Mission />
+      <Projects />
       <div className="text-white">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum
         voluptatibus, aspernatur voluptate facilis, delectus, natus nemo dicta

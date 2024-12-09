@@ -11,7 +11,7 @@ export const BlendsIcon = () => {
       />
       <img
         src={BlendsLogo2}
-        className="absolute w-[100%] h-[100%] top-0 left-0 transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100"
+        className="absolute w-[100%] h-[100%] top-0 left-0 transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100"
       />
     </div>
   );

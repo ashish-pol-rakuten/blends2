@@ -10,6 +10,8 @@ export const Mission = () => {
         <StaggerText
           className="text-8xl font-akira text-black gap-[3rem] items-end pr-[3.25rem]"
           text={["you", "imagine", "we", "will", "craft"]}
+          fontColor="text-black"
+          animationType="animated-slideinleft"
         />
       </div>
       <div className="absolute top-[37.5rem] left-[22.5rem]">

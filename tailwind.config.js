@@ -25,8 +25,8 @@ export default {
           "100%": { transform: "translateX(-100%)" },
         },
         marquee2: {
-          "0%": { transform: "translateX(100%)" },
-          "100%": { transform: "translateX(0%)" },
+          "0%": { transform: "translateX(130%)" },
+          "100%": { transform: "translateX(30%)" },
         },
         slidein: {
           "0%": {

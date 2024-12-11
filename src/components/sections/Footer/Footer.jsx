@@ -5,7 +5,7 @@ import facebook from "../../../assets/svg/facebook.svg";
 import twitter from "../../../assets/svg/twitter.svg";
 import instagram from "../../../assets/svg/instagram.svg";
 import arrowTl from "../../../assets/svg/arrow-tl.svg";
-import { Button } from "../Button/Button";
+import { Button } from "../../ui/Button/Button";
 
 export const Footer = () => {
   return (

@@ -11,7 +11,7 @@ export const Hero = () => {
       <div className="text-white font-akira text-6xl text-center z-10 absolute top-[30%] px-[5rem] uppercase">
         The Design and Marketing Agency You NEED
       </div>
-      <div className="z-10 absolute top-[55%] px-[2.5rem] py-[10rem] bg-black-blur">
+      <div className="z-10 absolute top-[55%] px-[2.5rem] py-[10rem] bg-black-blur w-full">
         <ScrollText />
       </div>
     </div>

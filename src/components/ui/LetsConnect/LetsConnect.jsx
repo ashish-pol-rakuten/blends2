@@ -3,9 +3,11 @@ import connect from "../../../assets/svg/connect.svg";
 import blackarrowTl from "../../../assets/svg/black-arrow-tl.svg";
 import { Button } from "../Button/Button";
 
-export const LetsConnect = () => {
+export const LetsConnect = ({ className }) => {
   return (
-    <div className="w-[82.5rem] h-[24rem] m-auto flex flex-col items-center justify-center relative gap-[4rem]">
+    <div
+      className={`${className} w-[82.5rem] h-[24rem] m-auto flex flex-col items-center justify-center relative gap-[4rem]`}
+    >
       <img src={connect} className="w-full absolute top-0 left-0 z-0" />
       <div className="text-white relative z-1 uppercase font-akira text-5xl text-center">
         Let's <br /> Connect

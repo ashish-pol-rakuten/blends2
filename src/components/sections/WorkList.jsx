@@ -32,6 +32,7 @@ export const WorkList = () => {
             img={sentosa}
             title="Sentosa"
             description="Web Development, Design"
+            link="/work/sentosa"
           />
         </div>
         <div className="flex gap-[3.75rem] justify-center">

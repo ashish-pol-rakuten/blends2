@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "../Button/Button";
 import rightarrows from "../../../assets/svg/rightarrows.svg";
+import { Link } from "react-router-dom";
 
 export const WorkCard = ({ img, title, description, link }) => {
   return (
@@ -17,12 +18,23 @@ export const WorkCard = ({ img, title, description, link }) => {
         <div className="absolute -bottom-[0.5rem] left-[40%] w-[20%] opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out h-[1px] bg-brand"></div>
       </div>
       <div className="absolute opacity-0 bg-[rgb(0,0,0,0.5)] group-hover:opacity-100 transition-all duration-500 ease-in-out w-full h-[33.5rem] top-0 left-0 flex items-center justify-center">
-        <Button className="px-[2.5rem] bg-[rgb(0,0,0,0.8)]">
-          <div className="flex gap-4">
-            <span className="text-xl text-white font-poppins">Explore</span>
-            <img src={rightarrows} />
-          </div>
-        </Button>
+        {!!!link ? (
+          <Button className="px-[2.5rem] bg-[rgb(0,0,0,0.8)]">
+            <div className="flex gap-4">
+              <span className="text-xl text-white font-poppins">Explore</span>
+              <img src={rightarrows} />
+            </div>
+          </Button>
+        ) : (
+          <Link to={link}>
+            <Button className="px-[2.5rem] bg-[rgb(0,0,0,0.8)]">
+              <div className="flex gap-4">
+                <span className="text-xl text-white font-poppins">Explore</span>
+                <img src={rightarrows} />
+              </div>
+            </Button>
+          </Link>
+        )}
       </div>
     </div>
   );

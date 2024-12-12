@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { BlendsIcon } from "../blendsIcon/blendsIcon";
+import { BlendsIcon } from "../BlendsIcon/BlendsIcon";
 import { Button } from "../Button/Button";
 
 export const Navbar = () => {

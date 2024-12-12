@@ -10,7 +10,7 @@ export const HearFromThem = () => {
           Hear from <div className="text-white">&nbsp;them</div>
         </div>
       </TextDivider>
-      <div className="px-[5rem]">
+      <div className="px-[5rem] mt-[2rem]">
         <SimpleSlider />
       </div>
     </div>

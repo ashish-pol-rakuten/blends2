@@ -8,17 +8,17 @@ import goldstar from "../../../assets/svg/star2.svg";
 const sliderData = [
   {
     name: "Jessica Evans",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan condimentum massa ac malesuada. Sed do eiusmod tempor incididunt.",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan condimentum massa ac malesuada. Sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan condimentum massa ac malesuada. Sed do eiusmod tempor incididunt.",
     image: jessica,
   },
   {
     name: "Jessica Evans",
-    text: "Suspendisse potenti. In hac habitasse platea dictumst. Integer tempor fringilla augue, non posuere lacus varius vel.",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan condimentum massa ac malesuada. Sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan condimentum massa ac malesuada. Sed do eiusmod tempor incididunt.",
     image: jessica,
   },
   {
     name: "Jessica Evans",
-    text: "Quisque nec ultrices libero, eget pulvinar lectus. Vestibulum et nisi vitae est aliquet feugiat. Proin vel nunc quis purus tincidunt fermentum.",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan condimentum massa ac malesuada. Sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan condimentum massa ac malesuada. Sed do eiusmod tempor incididunt.",
     image: jessica,
   },
 ];
@@ -32,20 +32,31 @@ export default function SimpleSlider() {
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 5000,
   };
   return (
     <Slider {...settings}>
       {sliderData.map((element, index) => (
-        <div className="bg-white flex rounded-lg">
-          <div className="flex flex-col items-start">
-            <div className="flex">
-              <img src={goldstar} />
-              <img src={goldstar} />
-              <img src={goldstar} />
-              <img src={goldstar} />
-              <img src={goldstar} />
+        <div
+          className="bg-white flex rounded-lg py-[4.5rem] px-[3.25rem] font-poppins"
+          key={index}
+        >
+          <div className="flex">
+            <div className="flex flex-col items-start flex-grow">
+              <div className="flex">
+                <img src={goldstar} />
+                <img src={goldstar} />
+                <img src={goldstar} />
+                <img src={goldstar} />
+                <img src={goldstar} />
+              </div>
+              <div className="text-[2.25rem] text-black">{element.name}</div>
+              <div className="text-[#575757] text-[1.25rem] font-light mt-[2rem]">
+                {element.text}
+              </div>
             </div>
+
+            <img src={element.image} className="w-[30rem] h-[30rem]" />
           </div>
         </div>
       ))}

@@ -3,13 +3,20 @@ import { Link, NavLink } from "react-router-dom";
 import { BlendsIcon } from "../BlendsIcon/BlendsIcon";
 import { Button } from "../Button/Button";
 import "./Navbar.css";
+import { NavHashLink } from "react-router-hash-link";
 
 export const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 backdrop-blur-sm h-[100px] flex items-center z-50 pl-[6rem]">
       <ul className="flex items-center w-full justify-center gap-[8rem]">
         <li>
-          <Link className=" text-white font-akira text-lg">ABOUT US</Link>
+          <NavHashLink
+            className=" text-white font-akira text-lg"
+            smooth
+            to="/#aboutus"
+          >
+            ABOUT US
+          </NavHashLink>
         </li>
         <li className="">
           <NavLink to="/work" className="text-white font-akira text-lg">
@@ -22,14 +29,20 @@ export const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link className="text-white font-akira text-lg">OUR SERVICES</Link>
+          <NavHashLink
+            className="text-white font-akira text-lg"
+            smooth
+            to="/#whatweoffer"
+          >
+            OUR SERVICES
+          </NavHashLink>
         </li>
         <li className="">
-          <Link>
+          <NavHashLink smooth to="/#contactus">
             <Button>
               <span className="text-white font-akira text-lg">CONTACT US</span>
             </Button>
-          </Link>
+          </NavHashLink>
         </li>
       </ul>
     </nav>

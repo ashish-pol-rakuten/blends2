@@ -3,17 +3,20 @@ import { Button } from "../ui/Button/Button";
 import DotGrid from "../../assets/svg/DotGrid.svg";
 import arrowDown from "../../assets/svg/arrowDown.svg";
 import upwardParabola from "../../assets/svg/upwardParabola.svg";
+import { HashLink } from "react-router-hash-link";
 
 export const AboutUs = () => {
   return (
-    <div className="pt-[17.5rem] relative">
+    <div className="pt-[17.5rem] relative" id="aboutus">
       <img src={upwardParabola} className="w-[114rem] absolute top-5" />
       <div className="absolute left-1/2 top-0">
-        <Button className="relative -left-1/2 bg-black px-[1.25rem]">
-          <span className="text-white font-poppins text-[1.25rem]">
-            Lets Get Started
-          </span>
-        </Button>
+        <HashLink smooth to="/#aboutus">
+          <Button className="relative -left-1/2 bg-black px-[1.25rem]">
+            <span className="text-white font-poppins text-[1.25rem]">
+              Lets Get Started
+            </span>
+          </Button>
+        </HashLink>
       </div>
       <div className="flex">
         <div className="flex flex-col w-1/2 pt-[2rem]">
@@ -52,14 +55,16 @@ export const AboutUs = () => {
                 <div className="text-base font-poppins">Total Client's</div>
               </div>
             </div>
-            <Button className="m-auto mt-[5rem]">
-              <div className="flex gap-2">
-                <span className="text-xl text-white font-akira">
-                  Contact Us
-                </span>
-                <img src={arrowDown} />
-              </div>
-            </Button>
+            <HashLink smooth to="/#contactus">
+              <Button className="m-auto mt-[5rem]">
+                <div className="flex gap-2">
+                  <span className="text-xl text-white font-akira">
+                    Contact Us
+                  </span>
+                  <img src={arrowDown} />
+                </div>
+              </Button>
+            </HashLink>
           </div>
         </div>
         <div className="flex flex-col w-1/2">

@@ -4,7 +4,7 @@ import { OfferCard } from "../ui/OfferCard/OfferCard";
 
 export const WhatWeOffer = () => {
   return (
-    <div className="mt-[4rem] mb-[8.5rem]">
+    <div className="mt-[4rem] mb-[8.5rem]" id="whatweoffer">
       <TextDivider>
         <div className="text-white font-akira font-semibold text-6xl uppercase">
           "Igniting Brands that

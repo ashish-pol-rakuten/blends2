@@ -3,7 +3,7 @@ import { ContactForm } from "../ui/ContactForm/ContactForm";
 
 export const ContactUs = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-white" id="contactus">
       <hr className="h-[0.75rem] bg-brand w-full border-0" />
       <div className="px-[3.75rem] py-[5rem]">
         <div className="flex flex-col items-start">

@@ -14,18 +14,21 @@ import tshirt from "../../assets/images/tshirt/tshirt.png";
 import { Button } from "../ui/Button/Button";
 import { WorkCard } from "../ui/WorkCard/WorkCard";
 import { LetsConnect } from "../ui/LetsConnect/LetsConnect";
+import { HashLink } from "react-router-hash-link";
 
 export const WorkList = () => {
   return (
-    <div className="py-5rem relative">
+    <div className="py-5rem relative" id="work">
       <img src={upwardParabola} className="w-[114rem] absolute top-5" />
       <div className="absolute left-1/2 top-0">
-        <Button className="relative -left-1/2 bg-black rounded-[1.5rem] py-[1rem] px-[1rem]">
-          <div className="flex gap-2">
-            <span className="text-xl text-white font-akira">OUR WORK</span>
-            <img src={arrowDown} />
-          </div>
-        </Button>
+        <HashLink smooth to="/work/#work">
+          <Button className="relative -left-1/2 bg-black rounded-[1.5rem] py-[1rem] px-[1rem]">
+            <div className="flex gap-2">
+              <span className="text-xl text-white font-akira">OUR WORK</span>
+              <img src={arrowDown} />
+            </div>
+          </Button>
+        </HashLink>
       </div>
       <div className="flex flex-col mt-[10rem] px-[3.75rem] pt-[15rem] pb-[10rem] gap-[3rem]">
         <div className="flex gap-[3.75rem] justify-center">

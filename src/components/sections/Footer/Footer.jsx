@@ -5,6 +5,7 @@ import linkedin from "../../../assets/svg/LinkedIn.svg";
 import instagram from "../../../assets/svg/instagram.svg";
 import arrowTl from "../../../assets/svg/arrow-tl.svg";
 import { Button } from "../../ui/Button/Button";
+import { HashLink } from "react-router-hash-link";
 
 export const Footer = () => {
   return (
@@ -22,10 +23,18 @@ export const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col text-white font-akira text-[1.25rem] gap-[3rem] uppercase ml-[12.5rem]">
-          <div>Work</div>
-          <div>Services</div>
-          <div>About</div>
-          <div>Contact</div>
+          <HashLink smooth to="/work">
+            <div>Work</div>
+          </HashLink>
+          <HashLink smooth to="/#whatweoffer">
+            <div>Services</div>
+          </HashLink>
+          <HashLink smooth to="/#aboutus">
+            <div>About</div>
+          </HashLink>
+          <HashLink smooth to="/#contactus">
+            <div>Contact</div>
+          </HashLink>
         </div>
         <div className="flex flex-col ml-[10.75rem] gap-[1.25rem]">
           <div className="flex gap-[5rem]">
@@ -47,14 +56,16 @@ export const Footer = () => {
               <div>+91 86258 91532</div>
             </div>
           </div>
-          <Button className="rounded-[2.5rem] px-2 -ml-2 py-[0] mt-[2rem]">
-            <div className="flex gap-1 items-center">
-              <span className="text-[1.5rem] text-white font-akira uppercase tracking-wide">
-                Get in touch
-              </span>
-              <img src={arrowTl} />
-            </div>
-          </Button>
+          <HashLink smooth to="/#contactus">
+            <Button className="rounded-[2.5rem] px-2 -ml-2 py-[0] mt-[2rem]">
+              <div className="flex gap-1 items-center">
+                <span className="text-[1.5rem] text-white font-akira uppercase tracking-wide">
+                  Get in touch
+                </span>
+                <img src={arrowTl} />
+              </div>
+            </Button>
+          </HashLink>
         </div>
       </div>
       <hr className="block h-1 border-t-[1px] w-full border-brand" />

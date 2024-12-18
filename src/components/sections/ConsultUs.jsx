@@ -5,6 +5,7 @@ import { StaggerText } from "../ui/StaggerText/StaggerText";
 import { Button } from "../ui/Button/Button";
 import DotGrid2 from "../../assets/svg/DotGrid2.svg";
 import arrowTl from "../../assets/svg/arrow-tl.svg";
+import { HashLink } from "react-router-hash-link";
 
 export const ConsultUs = () => {
   return (
@@ -24,14 +25,16 @@ export const ConsultUs = () => {
           />
         </div>
       </div>
-      <Button className="m-auto mt-[4rem] relative z-2">
-        <div className="flex gap-1 items-center px-4">
-          <span className="text-[1.75rem] text-white font-poppins">
-            Contact With Us
-          </span>
-          <img src={arrowTl} />
-        </div>
-      </Button>
+      <HashLink smooth to="/#contactus">
+        <Button className="m-auto mt-[4rem] relative z-2">
+          <div className="flex gap-1 items-center px-4">
+            <span className="text-[1.75rem] text-white font-poppins">
+              Contact With Us
+            </span>
+            <img src={arrowTl} />
+          </div>
+        </Button>
+      </HashLink>
     </div>
   );
 };

@@ -3,6 +3,7 @@ import { ScrollText } from "../ui/ScrollText/ScrollText";
 import { Button } from "../ui/Button/Button";
 import projectsImg from "../../assets/images/projects.png";
 import greenline from "../../assets/svg/greenline.svg";
+import { Link } from "react-router-dom";
 
 export const Projects = () => {
   return (
@@ -15,11 +16,13 @@ export const Projects = () => {
       <img src={projectsImg} className="w-full" />
       <div className="z-10 absolute top-[77%] w-full bg-grey-blur backdrop-blur-[30px] flex items-center mt-[4rem] pb-[5rem]">
         <div className="w-1/2 flex justify-center">
-          <Button className="bg-black px-[3rem]">
-            <span className="text-white font-poppins text-[1.5rem]">
-              See all work
-            </span>
-          </Button>
+          <Link to="/work">
+            <Button className="bg-black px-[3rem]">
+              <span className="text-white font-poppins text-[1.5rem]">
+                See all work
+              </span>
+            </Button>
+          </Link>
         </div>
         <div className="text-white font-poppins w-1/2 text-center px-[2.5rem]">
           Blends Agency has delivered impactful results across brand identity

@@ -38,7 +38,7 @@ export const Company = ({ data }) => {
             <hr className="block h-1 border-t-[1px] w-[20rem] border-white my-[0.75rem]" />
             <Button className="py-1 rounded-[3rem] px-[5rem] bg-white hover:border-white mt-[2rem]">
               <div className="flex gap-1 items-center">
-                <span className="text-[1.5rem] text-black font-poppins uppercase font-[500]">
+                <span className="text-[1.5rem] text-black font-poppins font-[500]">
                   Learn More
                 </span>
               </div>

@@ -107,21 +107,21 @@ export const ContactForm = () => {
                 <div className="radio-input">
                   <label className="label">
                     <input
-                      value="Visual Identity"
+                      value="Graphic Design"
                       name="Interested In"
-                      id="Visual Identity"
+                      id="Graphic Design"
                       type="checkbox"
                     />
-                    <span className="text">Visual Identity</span>
+                    <span className="text">Graphic Design</span>
                   </label>
                   <label className="label">
                     <input
-                      value="Branding"
+                      value="Marketing"
                       name="Interested In"
-                      id="Branding"
+                      id="Marketing"
                       type="checkbox"
                     />
-                    <span className="text">Branding</span>
+                    <span className="text">Marketing</span>
                   </label>
                   <label className="label">
                     <input

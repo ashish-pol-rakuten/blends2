@@ -87,9 +87,9 @@ export const WorkList = () => {
         <div className="flex gap-[3.75rem] justify-center">
           <WorkCard
             img={aasan}
-            title="Aasan"
+            title="Aasaan"
             description="Content Creation and Social Media Mangement"
-            link="/work/aasan"
+            link="/work/aasaan"
           />
           <WorkCard
             img={tshirt}

@@ -9,13 +9,13 @@ import comma from "../../../assets/svg/comma.svg";
 const sliderData = [
   {
     name: "Bhaskar Sharma",
-    position: "Founder, CEO & Head Of Design",
+    position: "Co-Founder, CEO",
     text: "Hey, I’m Bhaskar Sharma—founder, design enthusiast, and the guy who thought starting a creative agency would be a smooth ride (it’s not, but it’s worth it). Blends Agency began as a caffeine-fueled idea and has grown into a space where design and marketing come together to create something extraordinary. We don’t just build brands here; we craft stories that leave a lasting impression. So, if you’re ready to turn your big ideas into even bigger successes, let’s chat—coffee’s on me!",
     image: bhaskar,
   },
   {
     name: "Saurabh Adhate ",
-    position: "Founder, CEO & Head Of Marketing",
+    position: "Co-Founder, CMO",
     text: "Hey, I’m Saurabh Adhate—co-founder, designer, trader, and Head of Marketing at Blends Agency. With a background in biotech engineering and graphic designing with a knack for creativity, I thrive at the intersection of strategy and design. At Blends, we’re not just about building brands; we’re about crafting memorable experiences that connect and inspire. Whether it’s through innovative campaigns or bold storytelling, my goal is to turn your vision into a marketing masterpiece. Ready to make something extraordinary? Let’s connect! I’ll bring the marketing magic, you bring the ambition!",
     image: saurabh,
   },

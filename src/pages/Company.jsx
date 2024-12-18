@@ -36,49 +36,49 @@ export const Company = ({ data }) => {
             <div className="text-[2rem] font-semibold">Project Type</div>
             <div className="text-[1.25rem] ">{projectType}</div>
             <hr className="block h-1 border-t-[1px] w-[20rem] border-white my-[0.75rem]" />
-            <Button className="py-1 rounded-[3rem] px-10 bg-white hover:border-white mt-[2rem]">
-              <div className="flex gap-1 items-center px-10">
-                <span className="text-[1rem] text-black font-poppins uppercase">
-                  Launch Project
+            <Button className="py-1 rounded-[3rem] px-[5rem] bg-white hover:border-white mt-[2rem]">
+              <div className="flex gap-1 items-center">
+                <span className="text-[1.5rem] text-black font-poppins uppercase font-[500]">
+                  Learn More
                 </span>
               </div>
             </Button>
           </div>
         </div>
         <div className="flex flex-col border-[1px] border-brand my-[5rem] rounded-md font-poppins text-white">
-          <div className="px-[5rem] pt-[2rem] h-[16rem]">
+          <div className="px-[5rem] py-[2.5rem]">
             <div className="font-semibold text-[2rem]">Client Overview</div>
             <div className="font-light text-[1.25rem] mt-[1rem] text-[#CDCDCD]">
               {clientOverview}
             </div>
           </div>
-          <div className="border-t-[1px] border-brand px-[5rem] pt-[2rem] h-[16rem]">
+          <div className="border-t-[1px] border-brand px-[5rem] py-[2.5rem]">
             <div className="font-semibold text-[2rem]">Challenges</div>
             <div className="font-light text-[1.25rem] mt-[1rem] text-[#CDCDCD]">
-              <ul className="list-disc list-inside">
+              <ul className="list-disc pl-[1.25rem]">
                 {challenges.map((element, index) => (
                   <li key={index}>{element}</li>
                 ))}
               </ul>
             </div>
           </div>
-          <div className="border-t-[1px] border-brand px-[5rem] pt-[2rem] h-[16rem]">
+          <div className="border-t-[1px] border-brand px-[5rem] py-[2.5rem]">
             <div className="font-semibold text-[2rem]">Solution By Blends</div>
             <div className="font-light text-[1.25rem] mt-[1rem] text-[#CDCDCD]">
-              <ul className="list-disc list-inside">
+              <ul className="list-disc pl-[1.25rem]">
                 {solution.map((element, index) => (
                   <li key={index}>{element}</li>
                 ))}
               </ul>
             </div>
           </div>
-          <div className="border-t-[1px] border-brand px-[5rem] pt-[2rem] h-[16rem]">
+          <div className="border-t-[1px] border-brand px-[5rem] py-[2.5rem]">
             <div className="font-semibold text-[2rem]">Results</div>
             <div className="font-light text-[1.25rem] mt-[1rem] text-[#CDCDCD]">
               {results}
             </div>
           </div>
-          <div className="border-t-[1px] border-brand px-[5rem] pt-[2rem] h-[16rem]">
+          <div className="border-t-[1px] border-brand px-[5rem] py-[2.5rem]">
             <div className="font-semibold text-[2rem]">Conclusion</div>
             <div className="font-light text-[1.25rem] mt-[1rem] text-[#CDCDCD]">
               {conclusion}

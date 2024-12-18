@@ -26,10 +26,10 @@ export const AboutUs = () => {
               <div className="flex flex-col gap-2">
                 <div className="text-5xl font-akira flex justify-center gap-1">
                   <div className="animate-slidein [--delay:300ms] opacity-0">
-                    4
+                    2
                   </div>
                   <div className="animate-slidein [--delay:700ms] opacity-0">
-                    0
+                    5
                   </div>
                   <div className="animate-slidein [--delay:1000ms] opacity-0">
                     +

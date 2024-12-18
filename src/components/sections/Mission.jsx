@@ -14,8 +14,8 @@ export const Mission = () => {
           animationType="animated-slideinleft"
         />
       </div>
-      <div className="absolute top-[37.5rem] left-[22.5rem]">
-        <BlendsRotatingIcon className="text-white font-akira w-[15rem] h-[15rem]" />
+      <div className="absolute top-[35rem] left-[30rem]">
+        <BlendsRotatingIcon className="text-white font-akira w-[10rem] h-[10rem]" />
       </div>
     </div>
   );

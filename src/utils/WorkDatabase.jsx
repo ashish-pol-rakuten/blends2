@@ -227,8 +227,8 @@ export const WorkDatabase = {
       images: [matrix2],
     },
   },
-  Aasan: {
-    company: "Aasan",
+  Aasaan: {
+    company: "Aasaan",
     projectType: "Content Creation and Social Media Mangement",
     mainImage: aasan1,
     clientOverview:

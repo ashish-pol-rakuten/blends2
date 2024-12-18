@@ -47,8 +47,8 @@ function App() {
           element={<Company data={WorkDatabase["Matrix"]} />}
         />
         <Route
-          path="/work/aasan"
-          element={<Company data={WorkDatabase["Aasan"]} />}
+          path="/work/aasaan"
+          element={<Company data={WorkDatabase["Aasaan"]} />}
         />
         <Route
           path="/work/tshirt"

@@ -13,15 +13,20 @@ export const Projects = () => {
       </div>
       <div className="h-[8rem]"></div>
       <img src={projectsImg} className="w-full" />
-      <div className="z-10 absolute top-[77%] w-full bg-grey-blur backdrop-blur-[30px] h-[15rem] flex items-center">
-        <Button className="bg-black ml-[24.5rem] px-10">
-          <span className="text-white font-poppins">See all work</span>
-        </Button>
-        <div className="text-white font-poppins w-[40%] ml-[13.75rem]">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
-          voluptates explicabo. Sint minus eum rem iure tenetur. Dolorem beatae
-          doloribus sunt velit, dolore quibusdam fugiat fugit molestiae eaque
-          modi? Culpa.
+      <div className="z-10 absolute top-[77%] w-full bg-grey-blur backdrop-blur-[30px] flex items-center mt-[4rem] pb-[5rem]">
+        <div className="w-1/2 flex justify-center">
+          <Button className="bg-black px-[3rem]">
+            <span className="text-white font-poppins text-[1.5rem]">
+              See all work
+            </span>
+          </Button>
+        </div>
+        <div className="text-white font-poppins w-1/2 text-center px-[2.5rem]">
+          Blends Agency has delivered impactful results across brand identity
+          design, web design, social media marketing, and strategic campaigns.
+          As a top design agency in Pune, we’ve worked with startups and
+          businesses to craft innovative digital marketing solutions and
+          exceptional brand experiences that drive success.
         </div>
       </div>
       <img src={greenline} className="absolute z-10 bottom-0 w-full" />

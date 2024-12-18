@@ -1,8 +1,7 @@
 import React from "react";
 import blends from "../../../assets/svg/blends.svg";
-import blends2 from "../../../assets/svg/blends2.svg";
-import facebook from "../../../assets/svg/facebook.svg";
-import twitter from "../../../assets/svg/twitter.svg";
+import whatsapp from "../../../assets/svg/Whatsapp.svg";
+import linkedin from "../../../assets/svg/LinkedIn.svg";
 import instagram from "../../../assets/svg/instagram.svg";
 import arrowTl from "../../../assets/svg/arrow-tl.svg";
 import { Button } from "../../ui/Button/Button";
@@ -11,34 +10,45 @@ export const Footer = () => {
   return (
     <div>
       <hr className="block h-1 border-t-[1px] w-full border-brand" />
-      <div className="flex py-[7rem]">
+      <div className="flex pt-[7rem] pb-[2.5rem]">
         <div className="flex flex-col ml-[3.75rem] gap-[1.5rem]">
           <div className="flex gap-[1.375rem]">
-            <img src={blends2} className="h-[6.25rem]" />
             <img src={blends} className="h-[6.25rem]" />
           </div>
           <div className="text-white font-poppins text-[1rem] font-light">
-            Lorem ipsum dolor sit amet consectetur. Ultrices
-            <br /> dictum mauris rhoncus sit neque non tincidunt.
+            Transforming Ideas into Impactful Brands.
+            <br />
+            Your partner in creative design and digital marketing solutions.
           </div>
         </div>
-        <div className="flex flex-col text-white font-akira text-[1.25rem] gap-8 uppercase ml-[17.5rem]">
+        <div className="flex flex-col text-white font-akira text-[1.25rem] gap-[3rem] uppercase ml-[12.5rem]">
           <div>Work</div>
           <div>Services</div>
           <div>About</div>
           <div>Contact</div>
         </div>
-        <div className="flex flex-col ml-[10.75rem] mt-[2rem] gap-[1.25rem]">
-          <div className="flex gap-[2rem]">
-            <img src={facebook} />
-            <img src={twitter} />
+        <div className="flex flex-col ml-[10.75rem] gap-[1.25rem]">
+          <div className="flex gap-[5rem]">
+            <img src={linkedin} />
             <img src={instagram} />
+            <img src={whatsapp} />
           </div>
-          <div className="text-white font-poppins text-[1rem] font-light">
-            Email: info@blends.com
+          <div className="text-white font-poppins text-[1rem] font-light mt-[2rem] flex gap-[1.5rem] items-start">
+            <div className="flex flex-col">
+              <div>Email:</div>
+              <div className="invisible">lol</div>
+              <div className="invisible">lol</div>
+              <div>Phone:</div>
+            </div>
+            <div className="flex flex-col">
+              <div>connect@blends.agency / </div>
+              <div>blendsagency@gmail.com</div>
+              <div className="invisible">lol</div>
+              <div>+91 86258 91532</div>
+            </div>
           </div>
-          <Button className="py-1 rounded-[2.5rem] px-2 -ml-2">
-            <div className="flex gap-1 items-center px-1">
+          <Button className="rounded-[2.5rem] px-2 -ml-2 py-[0] mt-[2rem]">
+            <div className="flex gap-1 items-center">
               <span className="text-[1.5rem] text-white font-akira uppercase tracking-wide">
                 Get in touch
               </span>

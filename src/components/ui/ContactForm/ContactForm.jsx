@@ -39,7 +39,7 @@ export const ContactForm = () => {
     <div>
       <form onSubmit={onSubmit}>
         <div className="flex font-poppins text-black text-[1.25rem] font-light gap-[2rem]">
-          <div className="flex flex-col w-1/2 gap-[3rem]">
+          <div className="flex flex-col w-1/2 gap-[5rem]">
             <div className="flex gap-[1rem] items-center">
               Your name*
               <div className="border-black border-b-[1px] flex-grow">
@@ -52,9 +52,14 @@ export const ContactForm = () => {
               </div>
             </div>
             <div className="flex gap-[1rem] items-center">
-              Phone Number
+              Phone Number*
               <div className="border-black border-b-[1px] flex-grow">
-                <input type="text" name="Phone Number" className="w-full p-2" />
+                <input
+                  type="text"
+                  name="Phone Number"
+                  className="w-full p-2"
+                  required
+                />
               </div>
             </div>
             <div className="flex gap-[1rem] items-center">
@@ -74,7 +79,7 @@ export const ContactForm = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-1/2 gap-[3rem]">
+          <div className="flex flex-col w-1/2 gap-[5rem]">
             <div className="flex gap-[1rem] items-center">
               Your Email*
               <div className="border-black border-b-[1px] flex-grow">
@@ -87,13 +92,12 @@ export const ContactForm = () => {
               </div>
             </div>
             <div className="flex gap-[1rem] items-center">
-              Social Media URL*
+              Social Media URL
               <div className="border-black border-b-[1px] flex-grow">
                 <input
                   type="text"
                   name="Social Media Url"
                   className="w-full p-2"
-                  required
                 />
               </div>
             </div>
@@ -160,7 +164,7 @@ export const ContactForm = () => {
                       id="value-1"
                       type="radio"
                     />
-                    <span>Under 3L</span>
+                    <span>Under 50K</span>
                   </label>
                   <label className="flex gap-[0.5rem] sradio-label">
                     <input
@@ -169,7 +173,7 @@ export const ContactForm = () => {
                       id="value-1"
                       type="radio"
                     />
-                    <span>3L-5L</span>
+                    <span>50K-1L</span>
                   </label>
                   <label className="flex gap-[0.5rem] sradio-label">
                     <input
@@ -178,7 +182,7 @@ export const ContactForm = () => {
                       id="value-1"
                       type="radio"
                     />
-                    <span>5L-7L</span>
+                    <span>1L-3L</span>
                   </label>
                   <label className="flex gap-[0.5rem] sradio-label">
                     <input
@@ -187,19 +191,19 @@ export const ContactForm = () => {
                       id="value-1"
                       type="radio"
                     />
-                    <span>Over 7L</span>
+                    <span>Over 3L</span>
                   </label>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="w-full mt-[5rem] flex flex-col items-center gap-[1rem]">
+        <div className="w-full mt-[10rem] flex flex-col items-center gap-[1rem]">
           <button
             type="submit"
-            className="text-white font-poppins py-[1rem] px-[1.25rem] border-brand bg-brand border-solid rounded-[2rem] border-[0.125rem] w-fit hover:bg-white hover:text-brand transition-all duration-500 ease-in-out"
+            className="text-white text-[1.5rem] font-poppins py-[0.5rem] px-[3rem] border-brand bg-brand border-solid rounded-[2rem] border-[0.125rem] w-fit hover:bg-white hover:text-brand transition-all duration-500 ease-in-out"
           >
-            Submit Form
+            Submit
           </button>
           <span className="text-2xl font-light">{result}</span>
         </div>

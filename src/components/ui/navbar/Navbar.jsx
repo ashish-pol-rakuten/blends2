@@ -1,7 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { BlendsIcon } from "../BlendsIcon/BlendsIcon";
 import { Button } from "../Button/Button";
+import "./Navbar.css";
 
 export const Navbar = () => {
   return (
@@ -11,9 +12,9 @@ export const Navbar = () => {
           <Link className=" text-white font-akira text-lg">ABOUT US</Link>
         </li>
         <li className="">
-          <Link to="/work" className="text-white font-akira text-lg">
+          <NavLink to="/work" className="text-white font-akira text-lg">
             OUR WORK
-          </Link>
+          </NavLink>
         </li>
         <li className="">
           <Link to="/">

@@ -4,10 +4,10 @@ import SimpleSlider from "../ui/Slider/SimpleSlider";
 
 export const HearFromThem = () => {
   return (
-    <div className="bg-brand py-[5rem]">
+    <div className="py-[5rem]">
       <TextDivider linecolor="white">
-        <div className="text-black font-akira text-5xl uppercase flex">
-          Hear from <div className="text-white">&nbsp;them</div>
+        <div className="text-white font-akira text-6xl uppercase flex">
+          Hear from our <div className="text-brand">&nbsp;founders</div>
         </div>
       </TextDivider>
       <div className="px-[5rem] mt-[2rem]">

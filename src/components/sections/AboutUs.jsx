@@ -9,8 +9,10 @@ export const AboutUs = () => {
     <div className="pt-[17.5rem] relative">
       <img src={upwardParabola} className="w-[114rem] absolute top-5" />
       <div className="absolute left-1/2 top-0">
-        <Button className="relative -left-1/2 bg-black">
-          <span className="text-white font-poppins">Lets Get Started</span>
+        <Button className="relative -left-1/2 bg-black px-[1.25rem]">
+          <span className="text-white font-poppins text-[1.25rem]">
+            Lets Get Started
+          </span>
         </Button>
       </div>
       <div className="flex">
@@ -50,7 +52,7 @@ export const AboutUs = () => {
                 <div className="text-base font-poppins">Total Client's</div>
               </div>
             </div>
-            <Button className="m-auto mt-[4rem]">
+            <Button className="m-auto mt-[5rem]">
               <div className="flex gap-2">
                 <span className="text-xl text-white font-akira">
                   Contact Us
@@ -63,21 +65,36 @@ export const AboutUs = () => {
         <div className="flex flex-col w-1/2">
           <div className="relative">
             <img src={DotGrid} className="absolute z-1 left-[15rem]" />
-            <div className="absolute z-2 backdrop-blur-sm w-[32.8125rem] bg-[rgba(45,44,44,0.4)] rounded-xl text-white font-poppins text-base flex flex-col px-[4.125rem] py-[4.25rem] gap-6 top-[4rem] left-[5rem]">
+            <div className="absolute z-2 backdrop-blur-[0.5rem] w-[80%] bg-[rgba(45,44,44,0.4)] rounded-xl text-white font-poppins text-base flex flex-col px-[1rem] py-[1rem] gap-6 top-[4rem] left-[2rem]">
               <div>
-                Lorem ipsum dolor sit amet consectetur. Ultrices dictum mauris
-                rhoncus sit neque non tincidunt. Blandit sagittis molestie
-                interdum eu nisl arcu ac vulputate. Libero commodo.
+                Welcome to Blends Agency, the leading design agency in Pune and
+                a top-rated marketing agency in India, offering comprehensive
+                design and marketing solutions for businesses of all sizes.
+                Recognized as a creative agency in Pune and a hub for innovative
+                digital marketing strategies, we specialize in brand identity
+                design, strategic marketing solutions, social media marketing,
+                and web design and development.
               </div>
               <div>
-                Lorem ipsum dolor sit amet consectetur. Ultrices dictum mauris
-                rhoncus sit neque non tincidunt. Blandit sagittis molestie
-                interdum eu nisl arcu ac vulputate. Libero commodo.
+                As the best design firm in Maharashtra, we blend creativity and
+                technology to deliver exceptional digital marketing solutions
+                that drive growth. From corporate identity design to startup
+                branding consultancy, our team provides end-to-end services
+                tailored to your needs, including graphic design services,
+                e-commerce marketing solutions, and user experience design
+                services.
               </div>
               <div>
-                Lorem ipsum dolor sit amet consectetur. Ultrices dictum mauris
-                rhoncus sit neque non tincidunt. Blandit sagittis molestie
-                interdum eu nisl arcu ac vulputate. Libero commodo.
+                With a strong focus on Pune digital marketing services and
+                branding consultancy, we serve industries ranging from tech
+                startups to small businesses, offering expertise in B2B
+                marketing, visual branding, and integrated marketing
+                communication.
+              </div>
+              <div>
+                At Blends Agency, we help you transform your vision into
+                reality. Partner with the top design and marketing agency in
+                Pune for innovative, results-driven solutions!
               </div>
             </div>
           </div>

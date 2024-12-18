@@ -7,11 +7,11 @@ export const BlendsIcon = () => {
     <div className="relative group">
       <img
         src={BlendsLogo}
-        className="transition-opacity duration-300 ease-in-out group-hover:opacity-0"
+        className="transition-opacity duration-[800ms] ease-in-out group-hover:opacity-0"
       />
       <img
         src={BlendsLogo2}
-        className="absolute w-[100%] h-[100%] top-0 left-0 transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100"
+        className="absolute w-[100%] h-[100%] top-0 left-0 transition-opacity duration-[800ms] ease-in-out opacity-0 group-hover:opacity-100"
       />
     </div>
   );

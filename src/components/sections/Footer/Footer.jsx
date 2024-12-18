@@ -38,8 +38,20 @@ export const Footer = () => {
         </div>
         <div className="flex flex-col ml-[10.75rem] gap-[1.25rem]">
           <div className="flex gap-[5rem]">
-            <img src={linkedin} />
-            <img src={instagram} />
+            <a
+              href="https://in.linkedin.com/company/blends-agency"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={linkedin} />
+            </a>
+            <a
+              href="https://www.instagram.com/blends.agency/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={instagram} />
+            </a>
             <img src={whatsapp} />
           </div>
           <div className="text-white font-poppins text-[1rem] font-light mt-[2rem] flex gap-[1.5rem] items-start">

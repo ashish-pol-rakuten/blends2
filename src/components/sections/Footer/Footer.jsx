@@ -52,7 +52,6 @@ export const Footer = () => {
             >
               <img src={instagram} />
             </a>
-            <img src={whatsapp} />
           </div>
           <div className="text-white font-poppins text-[1rem] font-light mt-[2rem] flex gap-[1.5rem] items-start">
             <div className="flex flex-col">

@@ -31,6 +31,7 @@ export default function SimpleSlider() {
     arrows: false,
     autoplay: true,
     autoplaySpeed: 5000,
+    pauseOnHover: false,
   };
   return (
     <Slider {...settings}>

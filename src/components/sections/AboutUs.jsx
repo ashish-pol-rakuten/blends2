@@ -4,13 +4,18 @@ import DotGrid from "../../assets/svg/DotGrid.svg";
 import arrowDown from "../../assets/svg/arrowDown.svg";
 import upwardParabola from "../../assets/svg/upwardParabola.svg";
 import { HashLink } from "react-router-hash-link";
+import { scrollWithOffset } from "../../utils/Utils";
 
 export const AboutUs = () => {
   return (
     <div className="pt-[17.5rem] relative" id="aboutus">
       <img src={upwardParabola} className="w-[114rem] absolute top-5" />
       <div className="absolute left-1/2 top-0">
-        <HashLink smooth to="/#aboutus">
+        <HashLink
+          smooth
+          to="/#aboutus"
+          scroll={(el) => scrollWithOffset(el, 150)}
+        >
           <Button className="relative -left-1/2 bg-black px-[1.25rem]">
             <span className="text-white font-poppins text-[1.25rem]">
               Lets Get Started
@@ -55,7 +60,11 @@ export const AboutUs = () => {
                 <div className="text-base font-poppins">Total Client's</div>
               </div>
             </div>
-            <HashLink smooth to="/#contactus">
+            <HashLink
+              smooth
+              to="/#contactus"
+              scroll={(el) => scrollWithOffset(el, 200)}
+            >
               <Button className="m-auto mt-[5rem]">
                 <div className="flex gap-2">
                   <span className="text-xl text-white font-akira">

@@ -6,6 +6,7 @@ import { Button } from "../ui/Button/Button";
 import DotGrid2 from "../../assets/svg/DotGrid2.svg";
 import arrowTl from "../../assets/svg/arrow-tl.svg";
 import { HashLink } from "react-router-hash-link";
+import { scrollWithOffset } from "../../utils/Utils";
 
 export const ConsultUs = () => {
   return (
@@ -25,7 +26,11 @@ export const ConsultUs = () => {
           />
         </div>
       </div>
-      <HashLink smooth to="/#contactus">
+      <HashLink
+        smooth
+        to="/#contactus"
+        scroll={(el) => scrollWithOffset(el, 150)}
+      >
         <Button className="m-auto mt-[4rem] relative z-2">
           <div className="flex gap-1 items-center px-4">
             <span className="text-[1.75rem] text-white font-poppins">

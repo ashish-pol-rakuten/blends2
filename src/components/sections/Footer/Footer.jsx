@@ -6,6 +6,7 @@ import instagram from "../../../assets/svg/instagram.svg";
 import arrowTl from "../../../assets/svg/arrow-tl.svg";
 import { Button } from "../../ui/Button/Button";
 import { HashLink } from "react-router-hash-link";
+import { scrollWithOffset } from "../../../utils/Utils";
 
 export const Footer = () => {
   return (
@@ -26,13 +27,25 @@ export const Footer = () => {
           <HashLink smooth to="/work">
             <div>Work</div>
           </HashLink>
-          <HashLink smooth to="/#whatweoffer">
+          <HashLink
+            smooth
+            to="/#whatweoffer"
+            scroll={(el) => scrollWithOffset(el, 150)}
+          >
             <div>Services</div>
           </HashLink>
-          <HashLink smooth to="/#aboutus">
+          <HashLink
+            smooth
+            to="/#aboutus"
+            scroll={(el) => scrollWithOffset(el, 150)}
+          >
             <div>About</div>
           </HashLink>
-          <HashLink smooth to="/#contactus">
+          <HashLink
+            smooth
+            to="/#contactus"
+            scroll={(el) => scrollWithOffset(el, 200)}
+          >
             <div>Contact</div>
           </HashLink>
         </div>
@@ -67,7 +80,11 @@ export const Footer = () => {
               <div>+91 86258 91532</div>
             </div>
           </div>
-          <HashLink smooth to="/#contactus">
+          <HashLink
+            smooth
+            to="/#contactus"
+            scroll={(el) => scrollWithOffset(el, 200)}
+          >
             <Button className="rounded-[2.5rem] px-2 -ml-2 py-[0] mt-[2rem]">
               <div className="flex gap-1 items-center">
                 <span className="text-[1.5rem] text-white font-akira uppercase tracking-wide">

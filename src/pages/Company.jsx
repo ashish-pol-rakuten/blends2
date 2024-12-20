@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useRef } from "react";
 import { WorkGallery } from "../components/ui/WorkGallery/WorkGallery";
 import { TextDivider } from "../components/ui/TextDivider/TextDivider";
 import { Button } from "../components/ui/Button/Button";
 import { LetsConnect } from "../components/ui/LetsConnect/LetsConnect";
+import { WorkVideos } from "../components/ui/WorkVideos/WorkVideos";
 
 export const Company = ({ data }) => {
   const {
@@ -15,7 +16,14 @@ export const Company = ({ data }) => {
     results,
     conclusion,
     gallery,
+    videos,
   } = data;
+  const targetRef = useRef(null);
+  const handleScroll = () => {
+    if (targetRef.current) {
+      targetRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  };
   return (
     <div>
       <TextDivider>
@@ -37,7 +45,7 @@ export const Company = ({ data }) => {
             <div className="text-[1.25rem] ">{projectType}</div>
             <hr className="block h-1 border-t-[1px] w-[20rem] border-white my-[0.75rem]" />
             <Button className="py-1 rounded-[3rem] px-[5rem] bg-white hover:border-white mt-[2rem]">
-              <div className="flex gap-1 items-center">
+              <div className="flex gap-1 items-center" onClick={handleScroll}>
                 <span className="text-[1.5rem] text-black font-poppins font-[500]">
                   Learn More
                 </span>
@@ -47,7 +55,9 @@ export const Company = ({ data }) => {
         </div>
         <div className="flex flex-col border-[1px] border-brand my-[5rem] rounded-md font-poppins text-white">
           <div className="px-[5rem] py-[2.5rem]">
-            <div className="font-semibold text-[2rem]">Client Overview</div>
+            <div className="font-semibold text-[2rem]" ref={targetRef}>
+              Client Overview
+            </div>
             <div className="font-light text-[1.25rem] mt-[1rem] text-[#CDCDCD]">
               {clientOverview}
             </div>
@@ -90,6 +100,8 @@ export const Company = ({ data }) => {
         ) : (
           ""
         )}
+        <div className="p-[2rem]"></div>
+        {videos ? <WorkVideos videos={videos} /> : ""}
         <LetsConnect className="w-full mt-[5rem]" />
         <div className="mt-[5rem]"></div>
       </div>

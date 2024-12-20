@@ -110,6 +110,11 @@ export const WorkDatabase = {
       type: "single",
       images: [daulat1, daulat2, daulat3],
     },
+    videos: [
+      "https://drive.google.com/file/d/1OFI90QBruutv22vPBtqcYMwWMe0ITD9z/preview",
+      "https://drive.google.com/file/d/1-7uuzV_f3s8Tp0sJmtGi1JmR9T5hcvdi/preview",
+      "https://drive.google.com/file/d/1T_IiD469AnyHlndOpQGoqKojemUPLWNh/preview",
+    ],
   },
   Exogear: {
     company: "Exogear",
@@ -202,6 +207,11 @@ export const WorkDatabase = {
       type: "single",
       images: [cute1],
     },
+    videos: [
+      "https://drive.google.com/file/d/1OcTOLw-AtSf7-1aoXzJeXhmuS1CwmKuW/preview",
+      "https://drive.google.com/file/d/13sl-vtFjqk7tJejPdbexYwIFg0197GNX/preview",
+      "https://drive.google.com/file/d/167B33kC3koN10-kmgblnwco8chrXJNga/preview",
+    ],
   },
   Matrix: {
     company: "Matrixs Bar and Kitchen",
@@ -226,6 +236,13 @@ export const WorkDatabase = {
       type: "single",
       images: [matrix2],
     },
+    videos: [
+      "https://drive.google.com/file/d/1CVyu9LTdineb50sI33lRAX3SfEgVNV8o/preview",
+      "https://drive.google.com/file/d/1ylfHXxB4hLEzGlwNnnk4bJmy8FEPVLyt/preview",
+      "https://drive.google.com/file/d/1PkXIi6JL75gAjQjkgvrNPFhjokwKKEG3/preview",
+      "https://drive.google.com/file/d/12UekBJnLssqOopadNW_v50q7zsohlZQE/preview",
+      "https://drive.google.com/file/d/1d4GJ53DTpTZWIFrIvw4i8h4BuFRahjp8/preview",
+    ],
   },
   Aasaan: {
     company: "Aasaan",

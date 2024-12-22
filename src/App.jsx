@@ -9,7 +9,7 @@ import { WorkDatabase } from "./utils/WorkDatabase";
 
 function App() {
   return (
-    <div className="bg-black relative pt-[100px]">
+    <div className="bg-black relative">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

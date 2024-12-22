@@ -4,25 +4,33 @@ import { OfferCard } from "../ui/OfferCard/OfferCard";
 
 export const WhatWeOffer = () => {
   return (
-    <div className="mt-[4rem] mb-[8.5rem]" id="whatweoffer">
+    <div
+      className="mt-8 md:mt-[4rem] mb-16 md:mb-[8.5rem] px-4 md:px-0"
+      id="whatweoffer"
+    >
+      {/* Added padding for smaller screens */}
       <TextDivider>
-        <div className="text-white font-akira font-semibold text-6xl uppercase">
+        <div className="text-white font-akira font-semibold text-3xl sm:text-4xl md:text-6xl lg:text-7xl uppercase text-center md:text-left">
+          {/* Responsive text size and alignment */}
           "Igniting Brands that
         </div>
       </TextDivider>
       <TextDivider>
-        <div className="text-white font-akira font-semibold text-6xl uppercase flex">
+        <div className="text-white font-akira font-semibold text-3xl sm:text-4xl md:text-6xl lg:text-7xl uppercase flex justify-center md:justify-start">
+          {/* Responsive text size and alignment */}
           Drive
           <div className="text-brand">&nbsp;Change"</div>
         </div>
       </TextDivider>
-
-      <div className="text-[#B8B8B8] font-akira text-[3rem] font-light underline mt-[5rem] ml-[2rem]">
+      <div className="text-[#B8B8B8] font-akira text-2xl md:text-[3rem] font-light underline mt-8 md:mt-[5rem] ml-0 md:ml-[2rem] text-center md:text-left">
+        {/* Responsive text size and alignment */}
         What we offer:
       </div>
-      <div className="w-full mt-[5rem]">
-        <div className="flex flex-col font-poppins gap-[5rem]">
-          <div className="flex gap-[7.5rem] justify-center">
+      <div className="w-full mt-8 md:mt-[5rem]">
+        <div className="flex flex-col font-poppins gap-8 md:gap-[5rem]">
+          {/* Adjusted gap */}
+          <div className="flex flex-col md:flex-row gap-8 md:gap-[7.5rem] justify-center items-center md:items-start">
+            {/* Made flex direction responsive and added item alignment */}
             <OfferCard
               number="01"
               title="Branding"
@@ -39,7 +47,8 @@ export const WhatWeOffer = () => {
               description="Drive growth and engagement with innovative digital marketing strategies. We specialize in delivering SEO-driven campaigns that enhance your online presence."
             />
           </div>
-          <div className="flex gap-[7.5rem] justify-center">
+          <div className="flex flex-col md:flex-row gap-8 md:gap-[7.5rem] justify-center items-center md:items-start">
+            {/* Made flex direction responsive and added item alignment */}
             <OfferCard
               number="04"
               title="Social Media Content"

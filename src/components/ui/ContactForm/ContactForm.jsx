@@ -1,217 +1,134 @@
-import React from "react";
-import "./ContactForm.css";
+import React from 'react';
+import './ContactForm.css';
 
 export const ContactForm = () => {
-  const [result, setResult] = React.useState("");
+  const [result, setResult] = React.useState('');
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    setResult("Sending....");
+    setResult('Sending....');
     const formData = new FormData(event.target);
     const interestedInValues = [];
-    event.target
-      .querySelectorAll('input[name="Interested In"]:checked')
-      .forEach((checkbox) => {
-        interestedInValues.push(checkbox.value);
-      });
-    formData.delete("Interested In");
-    formData.append("Interested In", interestedInValues.join(", "));
+    event.target.querySelectorAll('input[name="Interested In"]:checked').forEach((checkbox) => {
+      interestedInValues.push(checkbox.value);
+    });
+    formData.delete('Interested In');
+    formData.append('Interested In', interestedInValues.join(', '));
+    formData.append('access_key', 'fc40d431-7731-4990-ba20-10f21bdbee90');
 
-    formData.append("access_key", "fc40d431-7731-4990-ba20-10f21bdbee90");
-
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
       body: formData,
     });
 
     const data = await response.json();
 
     if (data.success) {
-      setResult("Form Submitted Successfully");
+      setResult('Form Submitted Successfully');
       event.target.reset();
     } else {
-      console.log("Error", data);
+      console.log('Error', data);
       setResult(data.message);
     }
   };
 
   return (
-    <div>
+    <div className="container mx-auto p-4">
       <form onSubmit={onSubmit}>
-        <div className="flex font-poppins text-black text-[1.25rem] font-light gap-[2rem]">
-          <div className="flex flex-col w-1/2 gap-[5rem]">
-            <div className="flex gap-[1rem] items-center">
-              Your name*
-              <div className="border-black border-b-[1px] flex-grow">
-                <input
-                  type="text"
-                  name="Name"
-                  className="w-full p-2"
-                  required
-                />
-              </div>
+        <div className="flex flex-col lg:flex-row lg:gap-8 font-poppins text-black text-lg font-light">
+          {/* Left Column */}
+          <div className="flex flex-col gap-6 w-full lg:w-1/2">
+            <div className="flex flex-col">
+              <label className="mb-2">Your name*</label>
+              <input
+                type="text"
+                name="Name"
+                className="border-b border-black p-2 w-full"
+                required
+              />
             </div>
-            <div className="flex gap-[1rem] items-center">
-              Phone Number*
-              <div className="border-black border-b-[1px] flex-grow">
-                <input
-                  type="text"
-                  name="Phone Number"
-                  className="w-full p-2"
-                  required
-                />
-              </div>
+            <div className="flex flex-col">
+              <label className="mb-2">Phone Number*</label>
+              <input
+                type="tel"
+                name="Phone Number"
+                className="border-b border-black p-2 w-full"
+                required
+              />
             </div>
-            <div className="flex gap-[1rem] items-center">
-              Company name
-              <div className="border-black border-b-[1px] flex-grow">
-                <input type="text" name="Company Name" className="w-full p-2" />
-              </div>
+            <div className="flex flex-col">
+              <label className="mb-2">Company name</label>
+              <input type="text" name="Company Name" className="border-b border-black p-2 w-full" />
             </div>
-            <div className="flex gap-[1rem] items-start">
-              Project details*
-              <div className="border-black border-b-[1px] flex-grow">
-                <textarea
-                  name="Project Details"
-                  rows="2"
-                  className="w-full p-2"
-                ></textarea>
-              </div>
+            <div className="flex flex-col">
+              <label className="mb-2">Project details*</label>
+              <textarea
+                name="Project Details"
+                rows="2"
+                className="border-b border-black p-2 w-full"
+                required
+              ></textarea>
             </div>
           </div>
-          <div className="flex flex-col w-1/2 gap-[5rem]">
-            <div className="flex gap-[1rem] items-center">
-              Your Email*
-              <div className="border-black border-b-[1px] flex-grow">
-                <input
-                  type="email"
-                  name="Email"
-                  className="w-full p-2"
-                  required
-                />
+
+          {/* Right Column */}
+          <div className="flex flex-col gap-6 w-full lg:w-1/2">
+            <div className="flex flex-col">
+              <label className="mb-2">Your Email*</label>
+              <input
+                type="email"
+                name="Email"
+                className="border-b border-black p-2 w-full"
+                required
+              />
+            </div>
+            <div className="flex flex-col">
+              <label className="mb-2">Social Media URL</label>
+              <input
+                type="text"
+                name="Social Media Url"
+                className="border-b border-black p-2 w-full"
+              />
+            </div>
+            <div className="flex flex-col">
+              <label className="mb-2">Interested In*</label>
+              <div className="flex flex-wrap gap-4">
+                {['Graphic Design', 'Marketing', 'Social Media', 'UI/UX', 'Other'].map((option) => (
+                  <label key={option} className="flex items-center">
+                    <input value={option} name="Interested In" type="checkbox" className="mr-2" />
+                    {option}
+                  </label>
+                ))}
               </div>
             </div>
-            <div className="flex gap-[1rem] items-center">
-              Social Media URL
-              <div className="border-black border-b-[1px] flex-grow">
-                <input
-                  type="text"
-                  name="Social Media Url"
-                  className="w-full p-2"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col gap-[1rem]">
-              Interested In*
-              <div className="font-poppins">
-                <div className="radio-input">
-                  <label className="label">
-                    <input
-                      value="Graphic Design"
-                      name="Interested In"
-                      id="Graphic Design"
-                      type="checkbox"
-                    />
-                    <span className="text">Graphic Design</span>
+            <div className="flex flex-col">
+              <label className="mb-2">Project Budget*</label>
+              <div className="flex flex-wrap gap-4">
+                {[
+                  { value: 'Under 3L', label: 'Under 50K' },
+                  { value: '3L-5L', label: '50K-1L' },
+                  { value: '5L-7L', label: '1L-3L' },
+                  { value: 'Over 7L', label: 'Over 3L' },
+                ].map((budget) => (
+                  <label key={budget.value} className="flex gap-2 sradio-label">
+                    <input name="Project Budget" type="radio" value={budget.value} />
+                    <span>{budget.label}</span>
                   </label>
-                  <label className="label">
-                    <input
-                      value="Marketing"
-                      name="Interested In"
-                      id="Marketing"
-                      type="checkbox"
-                    />
-                    <span className="text">Marketing</span>
-                  </label>
-                  <label className="label">
-                    <input
-                      value="Social Media"
-                      name="Interested In"
-                      id="Social Media"
-                      type="checkbox"
-                    />
-                    <span className="text">Social Media</span>
-                  </label>
-                  <label className="label">
-                    <input
-                      value="UI/UX"
-                      name="Interested In"
-                      id="UI/UX"
-                      type="checkbox"
-                    />
-                    <span className="text">UI/UX</span>
-                  </label>
-                  <label className="label">
-                    <input
-                      value="Other"
-                      name="Interested In"
-                      id="Other"
-                      type="checkbox"
-                    />
-                    <span className="text">Other</span>
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col gap-[1rem] -mt-[2.5rem]">
-              Project Budget*
-              <div className="font-poppins">
-                <div className="flex gap-[3rem]">
-                  <label className="flex gap-[0.5rem] sradio-label">
-                    <input
-                      value="Under 3L"
-                      name="Project Budget"
-                      id="value-1"
-                      type="radio"
-                    />
-                    <span>Under 50K</span>
-                  </label>
-                  <label className="flex gap-[0.5rem] sradio-label">
-                    <input
-                      value="3L-5L"
-                      name="Project Budget"
-                      id="value-1"
-                      type="radio"
-                    />
-                    <span>50K-1L</span>
-                  </label>
-                  <label className="flex gap-[0.5rem] sradio-label">
-                    <input
-                      value="5L-7L"
-                      name="Project Budget"
-                      id="value-1"
-                      type="radio"
-                    />
-                    <span>1L-3L</span>
-                  </label>
-                  <label className="flex gap-[0.5rem] sradio-label">
-                    <input
-                      value="Over 7L"
-                      name="Project Budget"
-                      id="value-1"
-                      type="radio"
-                    />
-                    <span>Over 3L</span>
-                  </label>
-                </div>
+                ))}
               </div>
             </div>
           </div>
         </div>
-        <div className="w-full mt-[10rem] flex flex-col items-center gap-[1rem]">
+
+        <div className="w-full mt-12 flex flex-col items-center gap-4">
           <button
             type="submit"
-            className="text-white text-[1.5rem] font-poppins py-[0.5rem] px-[3rem] border-brand bg-brand border-solid rounded-[2rem] border-[0.125rem] w-fit hover:bg-white hover:text-brand transition-all duration-500 ease-in-out"
+            className="text-white text-xl font-poppins py-2 px-8 bg-brand border-brand border-solid rounded-full hover:bg-white hover:text-brand transition duration-500 ease-in-out"
           >
             Submit
           </button>
-          <span className="text-2xl font-light">{result}</span>
+          <span className="text-xl font-light">{result}</span>
         </div>
-        {/* <input type="text" name="name" required />
-        <input type="email" name="email" required />
-        <textarea name="message" required></textarea>
-
-        <button type="submit">Submit Form</button> */}
       </form>
     </div>
   );

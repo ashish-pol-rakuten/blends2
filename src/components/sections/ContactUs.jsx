@@ -5,17 +5,23 @@ export const ContactUs = () => {
   return (
     <div className="bg-white" id="contactus">
       <hr className="h-[0.75rem] bg-brand w-full border-0" />
-      <div className="px-[3.75rem] py-[5rem]">
-        <div className="flex flex-col items-start">
-          <div className="text-black font-akira uppercase text-[4.5rem]">
-            Let's <br /> <div className="text-brand -mt-8">team up</div>
-          </div>
-          <div className="text-black font-poppins text-[1.75rem] font-light">
+      <div className="px-10 lg:px-48 py-5 lg:py-20">
+        <div className="container mx-auto flex flex-col items-start">
+          <p className="uppercase font-akira text-black text-4xl lg:text-7xl">
+            Let's
+          </p>
+          <p className="uppercase font-akira text-brand text-4xl lg:text-7xl">
+            Team
+          </p>
+          <p className="uppercase font-akira text-brand text-4xl lg:text-7xl mb-5">
+            Up
+          </p>
+          <div className="text-black font-poppins text-base lg:text-lg font-light">
             Let us know your proposal! <br />
             Kindly fill the form, have a great day!
           </div>
         </div>
-        <div className="mt-[5rem]">
+        <div className="my-10 lg:my-20">
           <ContactForm />
         </div>
       </div>

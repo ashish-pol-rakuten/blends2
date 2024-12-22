@@ -10,16 +10,16 @@ import { scrollWithOffset } from "../../utils/Utils";
 
 export const ConsultUs = () => {
   return (
-    <div className="relative py-[10rem] overflow-hidden">
+    <div className="relative py-10 overflow-hidden">
       <FadingGrid img={DotGrid2} />
-      <div className="absolute top-0 left-0 backdrop-blur-[1.25rem] z-1 h-full w-full"></div>
+      <div className="absolute top-0 left-0 backdrop-blur-[1.25rem] z-1 h-auto w-auto"></div>
       <div className="flex">
         <div className="flex flex-col justify-end w-1/2">
-          <BlendsRotatingIcon className="text-white font-akira w-[10rem] h-[10rem] ml-[10rem]" />
+          <BlendsRotatingIcon className="text-white font-akira w-[0rem] h-[0rem] lg:w-[10rem] lg:h-[10rem] ml-[10rem]" />
         </div>
         <div className="flex w-1/2 justify-end">
           <StaggerText
-            className="text-8xl font-akira text-white gap-[3rem] items-end pr-[3.25rem]"
+            className="text-4xl lg:text-8xl sm:text-6xl font-akira text-white gap-[1rem] items-end pr-[3.25rem]"
             text={["take your", "next step", "with us"]}
             fontColor="text-white"
             animationType="animated-slideindown"

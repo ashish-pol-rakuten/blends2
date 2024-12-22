@@ -31,12 +31,12 @@ export const ConsultUs = () => {
         to="/#contactus"
         scroll={(el) => scrollWithOffset(el, 150)}
       >
-        <Button className="m-auto mt-[4rem] relative z-2">
+        <Button className="mx-auto my-5 !py-1 lg:py-4 relative z-20">
           <div className="flex gap-1 items-center px-4">
-            <span className="text-[1.75rem] text-white font-poppins">
+            <span className="text-lg lg:text-2xl ml-2 text-white font-poppins">
               Contact With Us
             </span>
-            <img src={arrowTl} />
+            <img className="w-10 h-10" alt="arrow icon" src={arrowTl} />
           </div>
         </Button>
       </HashLink>

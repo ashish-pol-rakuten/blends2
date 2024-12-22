@@ -4,7 +4,7 @@ import { ScrollText } from "../ui/ScrollText/ScrollText";
 
 export const Hero = () => {
   return (
-    <div className="py-12 sm:py-16 md:py-20 relative">
+    <div className="py-10 lg:py-20 relative">
       {/* Circular Background */}
       <div className="w-[200%]  sm:w-[120%] lg:w-[172rem] h-[30rem] sm:h-[36rem] lg:h-[36.1rem] rounded-[50%] border-brand border-solid border-[17px] -translate-x-[50%] shadow-[0_0_80px_0_rgba(7,101,56,1)] relative z-[1]"></div>
 

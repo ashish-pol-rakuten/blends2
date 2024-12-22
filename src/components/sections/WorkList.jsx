@@ -91,20 +91,20 @@ export const WorkList = () => {
 
   ];
   return (
-    <div className="py-10 relative" id="work">
+    <div className="py-10 relative">
       <img src={upwardParabola} className="w-full mx-auto absolute top-40" alt="Decorative" />
-      <div className="absolute left-1/2 top-56 transform -translate-x-1/2">
+      <div className="absolute left-1/2 top-36 transform -translate-x-1/2">
         <HashLink smooth to="/work/#work">
           <Button className="relative bg-black rounded-[1.5rem] py-3 px-4">
             <div className="flex gap-2  items-center">
-              <span className="text-base sm:text-lg text-white font-akira">OUR WORK</span>
+              <span className="text-sm lg:text-lg text-white font-akira">OUR WORK</span>
               <img src={arrowDown} alt="Arrow Down" />
             </div>
           </Button>
         </HashLink>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 w-full lg:w-3/5 mx-auto gap-5 justify-items-center items-center mt-80 lg:mt-96 py-20">
+      <div id="work" className="grid grid-cols-1 lg:grid-cols-2 w-full lg:w-3/5 mx-auto gap-5 justify-items-center items-center mt-40 py-20">
         {workCardlist.map((item) => {
           return (
             <WorkCard

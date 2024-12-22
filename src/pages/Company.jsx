@@ -52,11 +52,11 @@ export const Company = ({ data }) => {
             <div className="text-xl sm:text-2xl font-semibold">Project Type</div>
             <div className="text-lg sm:text-xl">{projectType}</div>
             <hr className="block h-1 border-t-[1px] w-full sm:w-[80%] border-white my-2" />
-            <Button className="py-2 rounded-full  px-10 bg-white hover:border-white mt-4" onClick={handleScroll}>
+            <button className="py-2 rounded-full px-10 bg-white hover:border-white mt-4" onClick={handleScroll}>
               <span className="text-lg sm:text-xl text-black font-poppins font-medium">
                 Learn More
               </span>
-            </Button>
+            </button>
           </div>
         </div>
 

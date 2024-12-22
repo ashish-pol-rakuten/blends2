@@ -8,7 +8,7 @@ import { scrollWithOffset } from "../../utils/Utils";
 
 export const AboutUs = () => {
   return (
-    <div className="pt-32 lg:pt-56 relative" id="aboutus">
+    <div className="pt-14 lg:pt-56 relative" id="aboutus">
       <img
         src={upwardParabola}
         className="w-full absolute top-5"
@@ -20,8 +20,8 @@ export const AboutUs = () => {
           to="/#aboutus"
           scroll={(el) => scrollWithOffset(el, 150)}
         >
-          <Button className="bg-black px-[1.25rem]">
-            <span className="text-white font-poppins text-[1.25rem]">
+          <Button className="bg-black px-2 !py-4 flex items-center justify-center">
+            <span className="text-white font-poppins text-xs lg:text-lg">
               Lets Get Started
             </span>
           </Button>
@@ -76,7 +76,7 @@ export const AboutUs = () => {
             className="absolute z-1 left-0 md:left-[15rem] w-1/2 md:w-auto"
             alt="Dot Grid"
           />
-          <div className="z-20 backdrop-blur-[0.5rem] w-full md:w-4/5 bg-[rgba(45,44,44,0.4)] rounded-xl text-white font-poppins text-base lg:text-lg flex flex-col p-4 gap-6 top-0 md:top-10 left-0 max-h-[70vh]">
+          <div className="z-20 backdrop-blur-[0.5rem] w-full md:w-4/5 bg-[rgba(45,44,44,0.4)] rounded-xl text-white font-poppins text-base lg:text-lg flex flex-col p-4 gap-6 top-0 md:top-10 left-0">
             <p>
               Welcome to Blends Agency, the leading design agency in Pune and a
               top-rated marketing agency in India, offering comprehensive

@@ -17,18 +17,18 @@ export const LetsConnect = ({ className }) => {
       />
 
       {/* Title */}
-      <div className="text-white relative z-10 uppercase font-akira text-3xl sm:text-4xl lg:text-5xl text-center">
+      <div className="text-white relative z-10 uppercase font-akira text-4xl lg:text-6xl text-center">
         Let's <br /> Connect
       </div>
 
       {/* Button */}
       <HashLink to="/#contactus">
-        <Button className="py-2 sm:py-3 lg:py-4 hover:cursor-pointer rounded-full px-4 sm:px-6 lg:px-8 relative z-10 bg-white hover:border-white">
-          <div className="flex gap-2 items-center px-2">
-            <span className="text-base sm:text-lg lg:text-xl text-black font-poppins uppercase tracking-wide">
+        <Button className="!py-1 lg:!py-3 hover:cursor-pointer rounded-full px-2 lg:!px-4 relative z-10 bg-white hover:border-white">
+          <div className="flex items-center justify-center">
+            <span className="text-lg lg:text-xl text-black ml-3 font-poppins uppercase tracking-wide">
               Get in touch
             </span>
-            <img src={blackarrowTl} alt="Arrow" />
+            <img className="w-8 h-8" src={blackarrowTl} alt="Arrow" />
           </div>
         </Button>
       </HashLink>

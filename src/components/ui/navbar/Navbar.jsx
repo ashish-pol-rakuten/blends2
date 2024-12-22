@@ -34,9 +34,9 @@ export const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <Link to="/">
+            <a href="/">
               <BlendsIcon />
-            </Link>
+            </a>
           </li>
           <li>
             <NavHashLink
@@ -64,9 +64,11 @@ export const Navbar = () => {
         <button type="button" className="absolute right-4 focus:outline-none" onClick={toggleMenu}>
           <GiHamburgerMenu className="text-white" size={40} />
         </button>
-        <div className={`absolute top-0 w-full bg-black flex lg:hidden flex-col space-y-4 items-center py-4 transition-opacity duration-500 ease-in-out ${
-            isOpen ? "opacity-100 visible" : "opacity-0 invisible"
-          } md:static md:flex md:flex-row md:space-y-0 md:space-x-6 md:opacity-100 md:visible`}>
+        <div
+          className={`absolute top-0 w-full bg-black flex lg:hidden flex-col space-y-4 items-center py-4 transition-opacity duration-500 ease-in-out ${
+            isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+          } md:static md:flex md:flex-row md:space-y-0 md:space-x-6 md:opacity-100 md:visible`}
+        >
           <ul className="flex flex-col items-center justify-center w-full h-96 gap-y-8">
             <button
               type="button"
@@ -76,9 +78,9 @@ export const Navbar = () => {
               <MdClose className="text-white" size={40} />
             </button>
             <li>
-              <Link to="/">
+              <a href="/">
                 <BlendsIcon />
-              </Link>
+              </a>
             </li>
             <li>
               <NavHashLink

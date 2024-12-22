@@ -9,13 +9,10 @@ export const Projects = () => {
   return (
     <div className="relative">
       {/* Title Section */}
-      <div className="relative -mt-16 md:-mt-32 text-white font-akira text-4xl md:text-6xl lg:text-7xl flex flex-col items-center">
+      <div className="mt-10 mb-12 text-white font-akira text-4xl md:text-6xl lg:text-7xl flex flex-col items-center">
         <div>OUR</div>
         <div className="text-brand">PROJECTS</div>
       </div>
-
-      {/* Spacer */}
-      <div className="h-[4rem] md:h-[6rem] lg:h-[8rem]"></div>
 
       {/* Projects Image */}
       <img

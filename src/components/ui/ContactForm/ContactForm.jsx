@@ -14,7 +14,7 @@ export const ContactForm = () => {
     });
     formData.delete('Interested In');
     formData.append('Interested In', interestedInValues.join(', '));
-    formData.append('access_key', 'fc40d431-7731-4990-ba20-10f21bdbee90');
+    formData.append('access_key', '2d179694-3b96-41eb-a8bc-630d8851e8a8');
 
     const response = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
@@ -94,9 +94,9 @@ export const ContactForm = () => {
               <label className="mb-2">Interested In*</label>
               <div className="flex flex-wrap gap-4">
                 {['Graphic Design', 'Marketing', 'Social Media', 'UI/UX', 'Other'].map((option) => (
-                  <label key={option} className="flex items-center">
+                  <label key={option} className="flex items-center sradio-label">
                     <input value={option} name="Interested In" type="checkbox" className="mr-2" />
-                    {option}
+                    <span className="checkmark">{option}</span>
                   </label>
                 ))}
               </div>

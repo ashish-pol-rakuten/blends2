@@ -10,7 +10,7 @@ import { HearFromThem } from "../components/sections/HearFromThem";
 
 export const Home = () => {
   return (
-    <div>
+    <div className="max-w-[2480px] mx-auto">
       <Hero />
       <AboutUs />
       <Mission />

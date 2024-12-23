@@ -38,10 +38,10 @@ export default function SimpleSlider() {
     <Slider {...settings}>
       {sliderData.map((element, index) => (
         <div
-          className="bg-brand flex flex-col lg:flex-row rounded-lg py-12 px-8 font-poppins"
+          className="bg-brand flex flex-col h-[1100px] lg:h-auto lg:flex-row rounded-lg py-12 px-8  font-poppins"
           key={index}
         >
-          <div className="flex flex-col lg:flex-row w-full">
+          <div className="flex flex-col justify-evenly h-full lg:flex-row w-full">
             {/* Text Section */}
             <div className="flex flex-col items-start w-full lg:w-[55%] relative px-4 lg:px-8">
               <div className="text-2xl lg:text-3xl text-white">{element.name}</div>
@@ -53,11 +53,11 @@ export default function SimpleSlider() {
                 <img
                   alt="comma"
                   src={comma}
-                  className="absolute bottom-0 right-4 lg:right-8 w-8 h-8"
+                  className="absolute bottom-0 right-4 lg:right-8 w-20 h-20"
                 />
               </div>
             </div>
-            <div className="w-full lg:w-[45%] flex justify-center mt-6 lg:mt-0">
+            <div className="w-full lg:w-[45%] flex justify-center mt-6  lg:mt-0">
               <img
                 alt="avatar"
                 src={element.image}

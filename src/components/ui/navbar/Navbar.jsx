@@ -58,9 +58,9 @@ export const Navbar = () => {
         </ul>
       </nav>
       <nav className="flex lg:hidden fixed w-full top-0 left-0 right-0 backdrop-blur-sm items-center justify-center z-50 py-10">
-        <Link to="/">
+        <a href ="/">
           <BlendsIcon />
-        </Link>
+        </a>
         <button type="button" className="absolute right-4 focus:outline-none" onClick={toggleMenu}>
           <GiHamburgerMenu className="text-white" size={40} />
         </button>

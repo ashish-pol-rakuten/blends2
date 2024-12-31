@@ -31,3 +31,4 @@ export const WorkCard = ({ img, title, description, link }) => {
     </div>
   );
 };
+  

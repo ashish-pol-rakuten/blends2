@@ -78,7 +78,7 @@ export const WorkList = () => {
       id: 9,
       title: "Aasaan",
       description: "Content Creation and Social Media Management",
-      link: "/work/aasan",
+      link: "/work/aasaan",
       image: aasan,
     },
     {
